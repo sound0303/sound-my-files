@@ -1,0 +1,16 @@
+MODULES
+we learnt about modules in smartphone
+hardware and software
+And modules of python programms which we executed that is DICE..ROCK,PAPER,SCISSORS..
+SNAKE AND LADDER 
+
+
+
+
+PROGRAMMS:
+how to write python programs for rock,paper.scissor
+
+https://thehelloworldprogram.com/python/python-game-rock-paper-scissors
+ This was link which I used to execute the pragramm
+
+
