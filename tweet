@@ -1,0 +1,13 @@
+import sys
+import os
+from twython import Twython
+consumer_key = '5fa65f4as65f4as6f8a6s118af16'
+consumer_secret = '4fdfdf3d8sf4d8f4d8f7af81a6as68f7as6'
+access_token = '6a84f6s8f4a68sf4-a684f6sa84fa68sf7sa68ffas6s6as6ad1'
+access_token_secret = 'a68s4f6af1sa6s2d1s6a5dsa68d7a6f8sg6a8ga6s51as21'
+takephoto = "raspistill -o /home/pi/picture.jpg"
+os.system(takephoto)
+photo = open('/home/pi/Code/ThisPiTweets/current.jpg', 'rb')
+twitter = Twython(consumer_key, consumer_secret, access_token, access_token_secret)
+image = twitter.upload_media(media=photo)
+twitter.update_status(status="This pi can tweet pictures!", media_ids=[image['media_id']])
